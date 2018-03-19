@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;Resultdate
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +8,16 @@ namespace Dolphin
 {
     public class Result
     {
-        private DateTime date;
-        private TimeSpan time;
+        private DateTime resultdate;
+        private TimeSpan lapTime;
 
-        public DateTime Date { get => date; set => date = value; }
-        public TimeSpan Time { get => time; set => time = value; }
+        public DateTime Resultdate { get => resultdate; set => resultdate = value; }
+        public TimeSpan LapTime { get => lapTime; set => lapTime = value; }
 
-        public Result( DateTime date, TimeSpan time)
+        public Result( DateTime resultdate, TimeSpan lapTime)
         {
-            Date = date;
-            Time = time;
+            Resultdate = resultdate;
+            LapTime = lapTime;
         }
     }
 }
