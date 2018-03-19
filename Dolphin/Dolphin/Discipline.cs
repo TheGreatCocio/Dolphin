@@ -8,12 +8,15 @@ namespace Dolphin
 {
     public class Discipline
     {
+        private int disciplineNum;
         private string name;
 
-        public string Name { get => name; set => name = value; }
+        public int DisciplineNum { get => disciplineNum; private set => disciplineNum = value; }
+        public string Name { get => name; private set => name = value; }
 
-        public Discipline(string name)
+        public Discipline(int disciplineNum ,string name)
         {
+            DisciplineNum = disciplineNum;
             Name = name;
         }
 

@@ -11,8 +11,8 @@ namespace Dolphin
         private DateTime resultdate;
         private TimeSpan lapTime;
 
-        public DateTime Resultdate { get => resultdate; set => resultdate = value; }
-        public TimeSpan LapTime { get => lapTime; set => lapTime = value; }
+        public DateTime Resultdate { get => resultdate; private set => resultdate = value; }
+        public TimeSpan LapTime { get => lapTime; private set => lapTime = value; }
 
         public Result( DateTime resultdate, TimeSpan lapTime)
         {

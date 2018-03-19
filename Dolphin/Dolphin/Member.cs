@@ -1,26 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dolphin
 {
     public class Member
     {
+        private int memberNum;
         private string name, adress, phoneNumber;
         private DateTime birthday, enrollDate;
+        private bool isMember;
         private MembershipType membershipType;
 
-        public string Name { get => name; set => name = value; }
-        public string Adress { get => adress; set => adress = value; }
-        public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
-        public DateTime Birthday { get => birthday; set => birthday = value; }
-        public DateTime EnrollDate { get => enrollDate; set => enrollDate = value; }
-        public MembershipType MembershipType { get => membershipType; set => membershipType = value; }
+        public int MemberNum { get => memberNum; private set => memberNum = value; }
+        public string Name { get => name; private set => name = value; }
+        public string Adress { get => adress; private set => adress = value; }
+        public string PhoneNumber { get => phoneNumber; private set => phoneNumber = value; }
+        public DateTime Birthday { get => birthday; private set => birthday = value; }
+        public DateTime EnrollDate { get => enrollDate; private set => enrollDate = value; }
+        public bool IsMember { get => isMember; private set => isMember = value; }
+        public MembershipType MembershipType { get => membershipType; private set => membershipType = value; }
+        
 
-        public Member (string name, string adress, string phoneNumber, DateTime birthday, DateTime enrollDate, MembershipType type)
+        public Member (int memberNum, string name, string adress, string phoneNumber, DateTime birthday, DateTime enrollDate, MembershipType type)
         {
+            MemberNum = memberNum;
             Name = name;
             Adress = adress;
             PhoneNumber = phoneNumber;
