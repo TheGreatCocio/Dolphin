@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace Dolphin
 {
-    public class MembershipFee
+    public class MembershipType
     {
         private string typeName;
-        private float fee;
 
         public string TypeName { get => typeName; set => typeName = value; }
-        public float Fee { get => fee; set => fee = value; }
 
-        public MembershipFee(string typeName, float fee)
+        public MembershipType(string typeName)
         {
             TypeName = typeName;
-            Fee = fee;
         }
     }
 }

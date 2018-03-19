@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace Dolphin
 {
-    class Discipline
+    public class Discipline
     {
+        private string name;
+
+        public string Name { get => name; set => name = value; }
+
+        public Discipline(string name)
+        {
+            Name = name;
+        }
+
+        public void Top5Swimmers()
+        {
+
+        }
     }
 }
