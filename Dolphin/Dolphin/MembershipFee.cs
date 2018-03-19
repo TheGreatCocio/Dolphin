@@ -11,8 +11,8 @@ namespace Dolphin
         private string typeName;
         private float fee;
 
-        public string TypeName { get => typeName; set => typeName = value; }
-        public float Fee { get => fee; set => fee = value; }
+        public string TypeName { get => typeName; private  set => typeName = value; }
+        public float Fee { get => fee; private set => fee = value; }
 
         public MembershipFee(string typeName, float fee)
         {

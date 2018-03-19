@@ -10,7 +10,7 @@ namespace Dolphin
     {
         private string typeName;
 
-        public string TypeName { get => typeName; set => typeName = value; }
+        public string TypeName { get => typeName; private set => typeName = value; }
 
         public MembershipType(string typeName)
         {

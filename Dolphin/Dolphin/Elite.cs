@@ -8,7 +8,7 @@ namespace Dolphin
 {
     public class Elite : Member
     {
-        public Elite(string name, string adress, string phoneNumber, DateTime birthday, DateTime enrollDate, MembershipType type) : base(name, adress, phoneNumber, birthday, enrollDate, type)
+        public Elite(int memberNum, string name, string adress, string phoneNumber, DateTime birthday, DateTime enrollDate, MembershipType type) : base(memberNum, name, adress, phoneNumber, birthday, enrollDate, type)
         {
 
         }
