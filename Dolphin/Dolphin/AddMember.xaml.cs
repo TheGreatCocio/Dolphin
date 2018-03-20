@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Dolphin
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AddMember.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddMember : Window
     {
-        public MainWindow()
+        public AddMember()
         {
             InitializeComponent();
-        }
-
-        public void BtnNewMember_Click(object sender, RoutedEventArgs e)
-        {
-            AddMember addMember = new AddMember();
-            addMember.ShowDialog();
         }
     }
 }
