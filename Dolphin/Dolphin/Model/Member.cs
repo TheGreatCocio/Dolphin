@@ -4,13 +4,13 @@ namespace Dolphin
 {
     public class Member
     {
-        private int memberNum;
+        private int? memberNum;
         private string name, adress, phoneNumber;
         private DateTime birthday, enrollDate;
         private bool isMember;
         private MembershipType membershipType;
 
-        public int MemberNum { get => memberNum; private set => memberNum = value; }
+        public int? MemberNum { get => memberNum; private set => memberNum = value; }
         public string Name { get => name; private set => name = value; }
         public string Adress { get => adress; private set => adress = value; }
         public string PhoneNumber { get => phoneNumber; private set => phoneNumber = value; }
@@ -20,7 +20,7 @@ namespace Dolphin
         public MembershipType MembershipType { get => membershipType; private set => membershipType = value; }
         
 
-        public Member (int memberNum, string name, string adress, string phoneNumber, DateTime birthday, DateTime enrollDate, MembershipType type)
+        public Member (int? memberNum, string name, string adress, string phoneNumber, DateTime birthday, DateTime enrollDate, MembershipType type)
         {
             MemberNum = memberNum;
             Name = name;

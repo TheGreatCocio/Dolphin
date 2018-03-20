@@ -57,6 +57,8 @@
     <Compile Include="AddMember.xaml.cs">
       <DependentUpon>AddMember.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CRUDController.cs" />
+    <Compile Include="DAL.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>

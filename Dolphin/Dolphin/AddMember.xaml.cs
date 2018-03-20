@@ -23,5 +23,18 @@ namespace Dolphin
         {
             InitializeComponent();
         }
+
+        public void CreateNewUser_Click(object sender, RoutedEventArgs e)
+        {
+            if (CRUDController.Instance.CreateMember(txtBoxAddMemberName.Text, txtBoxAddMemberAdress.Text, txtBoxAddMemberPhoneNumber.Text, BirthdayDatePicker.SelectedDate.Value))
+            {
+                MessageBox.Show("SUCCESS!!");
+            }
+            else
+            {
+                MessageBox.Show("FAIL!!");
+            }
+            
+        }
     }
 }
